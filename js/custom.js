@@ -3,21 +3,14 @@
   var menu = document.querySelector("#" + burger.dataset.target);
   burger.addEventListener("click", function() {
     var state = burger.getAttribute("aria-expanded"); 
-    console.log(state);
-
-    if (state == "true") 
-  {
+    if (state=='true')  {
     state = "false"
-  } else {
+    } else {
     state = "true"
-  }
-
-  burger.setAttribute("aria-expanded", state);
-
+    }
+    burger.setAttribute("aria-expanded", state);
     burger.classList.toggle("is-active");
-    //burger.setAttribute('aria-expanded', true);
     menu.classList.toggle("is-active");
-
   });
 })();
 

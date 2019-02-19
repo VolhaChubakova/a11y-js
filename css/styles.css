@@ -144,8 +144,8 @@ nav.breadcrumb [aria-current="page"] {
   margin-bottom: 2rem;
 }
 
-.navbar-burger{
-  color: #fff;
+burger.is-active {
+  display: none;
 }
 
 .info-tiles {
@@ -300,3 +300,17 @@ input:focus, button:focus, a:focus, select:focus, textarea:focus {
     background-color: #888;
   }
 }
+
+@media screen and (max-width: 1087px) {
+  .navbar-menu {
+    background-color: #888;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .navbar-burger {
+    display: none;
+  }
+}
+
+
